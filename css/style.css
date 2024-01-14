@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary_color: #b070ff;
+    --btn_color: #7c14fd;
+    --boxColor: #faf6ff;
+    --product: "PT Sans", sans-serif;
+    --HK: "Hanken Grotesk", sans-serif;
+}
+body {
+    color: var(--black);
+    background: url(../images/dipper.png);
+}
+
+/* =====================
+    common css start
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: var(--popins);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+img {
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p,
+img,
+div {
+    padding: 0;
+    margin: 0;
+}
+
+/* =====================
+    common css end
+========================= */
+
+/* =====================
+    nav css start
+========================= */
+.navbar {
+    padding: 22px 0;
+    box-shadow: 0px 12px 22px 0px rgba(0, 0, 0, 0.05);
+    z-index: 99;
+    background: var(--white);
+}
+
+.navbar-nav {
+    column-gap: 25px;
+}
+
+.nav-link {
+    font-family: var(--HK);
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-btn {
+    background: transparent;
+    padding: 14px 28px;
+    margin-left: 20px;
+    border: 1px solid var(--btn_color);
+    color: var(--btn_color, #7c14fd);
+    font-family: var(--HK);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.nav-btn:hover {
+    color: var(--white);
+    background: var(--btn_color);
+}
+/* =====================
+    nav css end
+========================= */
+
+/* =====================
+    banner css start
+========================= */
+#banner_part {
+    padding: 200px 0;
+    padding-bottom: 0;
+    background: radial-gradient(
+        178.87% 178.87% at 37.56% -85.79%,
+        rgba(184, 128, 255, 0.2) 0%,
+        #faf6ff 100%
+    );
+}
+.banner__title {
+    font-family: var(--product);
+    font-size: 76px;
+    font-weight: 700;
+    letter-spacing: -1.14px;
+    margin-bottom: 10px;
+}
+.banner__link {
+    color: var(--primary_color);
+    font-family: var(--HK);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 119.7%;
+}
+
+/* =====================
+    banner css end
+========================= */
+/* =====================
+    card css start
+========================= */
+.card_part {
+    background: linear-gradient(rgba(183, 128, 255, 0.495), #faf6ff);
+    padding: 200px 0 100px;
+}
+.custom-shape-divider-top-1705016242 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1705016242 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 260px;
+}
+
+.custom-shape-divider-top-1705016242 .shape-fill {
+    fill: var(--boxColor);
+}
+.cardRow {
+    row-gap: 60px;
+}
+.cardItem {
+    padding: 108px 43px 42px 36px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background: var(--boxColor);
+    box-shadow: 0px 86px 114px 0px rgba(124, 20, 253, 0.14);
+}
+.cardItem__title {
+    font-family: var(--product);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37.6px;
+    margin-bottom: 27px;
+}
+.cardItem__summary {
+    margin-bottom: 58px;
+    font-family: var(--HK);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    opacity: 0.8;
+}
+.cardItem__btn {
+    padding: 13px 24px;
+    border-radius: 15px;
+    background: var(--primary_color);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: var(--white);
+    font-family: var(--HK);
+    font-size: 17px;
+    font-weight: 700;
+    animation: card 1s infinite 0s ease-in-out;
+    -webkit-animation: card 1s infinite 0s ease-in-out;
+}
+
+@keyframes card {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+.cardList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+.cardList__item {
+    font-family: var(--product);
+    font-size: 22px;
+    color: var(--black);
+    font-weight: 700;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+.cardList__item:hover {
+    color: var(--primary_color);
+}
+/* =====================
+    card css end
+========================= */
+
+/* =====================
+    lunar css start
+========================= */
+#lunar_part {
+    background: radial-gradient(
+        178.87% 178.87% at 37.56% -85.79%,
+        rgba(184, 128, 255, .1) 0%,
+        #faf6ff 100%
+    );
+    padding-bottom: 74px;
+}
+
+.lunar__title{
+    font-family: var(--product);
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.lunar__summary {
+	color: #32046B;
+	font-family: var(--HK);
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 36.5px;
+	letter-spacing: 0.3px;
+	margin: 18px 0 60px;
+}
+.lunar__btn {
+	border-radius: 25px;
+	background: var(--btn_color);
+	box-shadow: 0px 26px 46px 0px rgba(124, 20, 253, 0.35);
+	padding: 22px 26px;
+	color: var(--white, #FFF);
+	font-family: var(--HK);
+	font-size: 18px;
+	font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.lunarImg {
+	left: 90px;
+	bottom: 0;
+}
+
+
+
+/* =====================
+    lunar css end
+========================= */
