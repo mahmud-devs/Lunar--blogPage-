@@ -253,7 +253,7 @@ div {
 #lunar_part {
     background: radial-gradient(
         178.87% 178.87% at 37.56% -85.79%,
-        rgba(184, 128, 255, 0.1) 0%,
+        rgba(184, 128, 255, 0.086) 0%,
         #faf6ff 100%
     );
     padding-bottom: 74px;
